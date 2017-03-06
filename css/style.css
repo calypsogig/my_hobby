@@ -6,7 +6,8 @@
 body{
 	font-size: 1.2em;
 	background: #efefef url(../img/bg.jpg);
-	color: #555;
+	color: #000;
+	font-family: Arial;
 }
 
 p{
@@ -78,39 +79,45 @@ width: 1000px;
 margin: auto;
 }
 
-.logo img {
-	float:left;
-	padding: 20px 0 0 50px;
+.logo a {    
+    display: block;
+	text-align: center;
+    padding-top: 10px;
+	padding-right: 40px;
 }
 
-.logo h1{
+nav h1{
 	font: normal 300% 'century gothic', arial, sans-serif;
-	margin: 0 0 0 9px;
-	padding-top: 25px;
+	margin: 0;
+	padding: 0;
 	color: #1f839a;
 	letter-spacing: 0.1em;
-	text-align: center;
+	/* text-align: center; */
 }
 
 nav{
-	width: 900px;
-	height: 46px;
+	display: inline-block;
+	text-align: center;
+	/* width: 835px; */
+	/* margin: auto; */
+	/* height: 46px; */
 }
 
 ul.menu{
-	float: right;
-	margin: 0;
+	/* float: right; */
+	margin: -10px 0 0;
 }
 
 ul.menu li{
-	float: left;
-	padding: 0 0 0 9px; 
+	/* float: left; */
+	display: inline-block;
+	/* padding: 0 0 0 9px;  */
 	/*list-style: none; */
-	margin: 1px 2px 0 0;
+	/* margin: 1px 2px 0 0; */
 }
 
 ul.menu li a{
-	font: normal 100% 'trebuchet ms', sans-serif;
+	font: normal 1.2em 'trebuchet ms', sans-serif;
 	display: block;
 	height: 20px;
 	padding: 6px 35px 5px 28px;
@@ -231,7 +238,7 @@ fieldset .btn {
 	padding-left: 2.4%;
 }
 .cat_block{
-	margin-bottom: 5%;
+	margin-bottom: 3%;
 }
 
 .cat_block img{
@@ -331,11 +338,20 @@ transition: 2s;
   border: 1px solid #ccc;
   background: rgba(244, 203, 79, 0.7);/*rgba(255, 193, 7, 0.7)*/
   box-shadow: inset 0 0 20px #DAD7D5;
+  width: 45%;
 }
 
 /*post*/
 .posts .posts_content{
 	font-size: 0.8em;
+}
+
+.posts .posts_content p{
+	padding-left: 10px;
+}
+
+.content h2 a {
+	padding-left: 0;
 }
 
 .reg {
@@ -431,6 +447,13 @@ footer{
 	float: left;
 	width: 55%;
 }
+
+.menu-foot nav {
+	text-align: left;
+	padding-bottom: 20px;
+	font-family: 'trebuchet ms', sans-serif;
+}
+
 .menu-foot a{
 	color: #000;
 	text-decoration: none;
